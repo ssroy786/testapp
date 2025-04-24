@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>This is a scope test</h1>
+    <h1>This is a scope test</h1>
+    <h1>This is a scope test</h1>
+    <script>
+        /* var badam = "this is a test for global scope";
+
+                                                                                        function twin() {
+                                                                                            var kaku = "this is a local scope";
+                                                                                            console.log(kaku);
+                                                                                        }
+                                                                                        twin();
+                                                                                        console.log(badam); */
+
+        (function() {
+            var kake = document.querySelectorAll('h1');
+            for (var i = 0; i < kake.length; i++) {
+                kake[i].style.color = "red";
+            }
+
+        }());
+    </script>
+</body>
+
+</html>

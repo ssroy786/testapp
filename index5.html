@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form id="form" method="get">
+        <label>Type your name Buddy: <input type="text" name="name"></label>
+        <input type="submit" value="update">
+    </form>
+
+    <script>
+        var formdata = document.getElementById('form');
+        formdata.addEventListener('submit', function(tolo) {
+            tolo.preventDefault();
+            var hp = document.querySelector('input').value;
+            alert(hp);
+        });
+    </script>
+</body>
+
+</html>
